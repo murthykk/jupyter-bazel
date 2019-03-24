@@ -1,9 +1,8 @@
 workspace(name = "jupyter_bazel")
-
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 git_repository(
     name = "io_bazel_rules_python",
-    # NOT VALID!  Replace this with a Git commit SHA.
-    commit = "8b5d0683a7d878b28fffe464779c8a53659fc645",
+    commit = "965d4b4a63e6462204ae671d7c3f02b25da37941",
     remote = "https://github.com/bazelbuild/rules_python.git",
 )
 
